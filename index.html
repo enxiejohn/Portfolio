@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mhel Bernard Villaflor | Game Developer Portfolio</title>
   <meta name="description" content="Hello, I'm Mhel Bernard Villaflor, an aspiring game developer based in Calamba, Laguna, Philippines." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,7 +20,7 @@
     <header class="sidebar">
       <div class="sidebar__top">
         <!-- TODO: Add your photo to an /images folder, then uncomment -->
-        <!-- <img class="avatar" src="images/photo.jpg" alt="Photo of Your Name" /> -->
+        <!-- <img class="avatar" src="images/photo.jpg" alt="Photo of Mhel Bernard Villaflor" /> -->
         <h1 class="name">Mhel Bernard Villaflor</h1>
         <p class="role">Aspiring Game Developer</p>
         <p class="location">Calamba, Laguna, Philippines</p>
@@ -39,7 +42,7 @@
       <div class="sidebar__links">
         <a href="https://github.com/enxiejohn" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/mhel-bernard-villaflor-0b9199419/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://drive.google.com/file/d/15WhBJQuU6n8vAmijCnqSWmlUH7AkGA3v/view?usp=drive_link" download>View CV</a>
+        <a href="https://drive.google.com/file/d/15WhBJQuU6n8vAmijCnqSWmlUH7AkGA3v/view?usp=drive_link" target="_blank" rel="noopener">View CV</a>
       </div>
     </header>
 
@@ -52,7 +55,7 @@
         <p>I'm Mhel Bernard Villaflor, an aspiring game developer with a passion for creating immersive experiences. I specialize in game design and development, with a focus on storytelling and player engagement.</p>
       </section>
 
-       <!-- SKILLS -->
+      <!-- SKILLS -->
       <section id="skills" class="section">
         <h2>Skills</h2>
         <div class="skills">
@@ -85,16 +88,33 @@
           <!-- Copy a skill-group block above to add more categories -->
         </div>
       </section>
-<section class="section-wrap cv-section" id="cv">
-      <div class="section-heading"><div><p class="eyebrow">LEARNING CREDENTIALS</p><h2>My background as a <span class="accent"> Graphic Designer</span></h2></div></div>
-      <div class="certificates-grid" id="certificatesGrid"></div>
-    <div class="curriculum-vitae">
-      <div class="cv-inline"><div><p class="eyebrow">CURRICULUM VITAE</p><h3>My CV</h3><p>View or download my latest CV in PDF format.</p></div><div class="cv-actions"><a class="btn btn-primary" href="certs/CV MHEL.pdf" download>Download CV <span>↓</span></a><a class="btn btn-secondary" href="certs/CV MHEL.pdf" target="_blank" rel="noopener">View CV Online ↗</a></div></div>
-    </div>
-    </section>
+
+      <!-- CV -->
+      <section id="cv" class="section">
+        <h2>My background as a <span class="accent">Developer</span></h2>
+
+        <div class="cv-card">
+          <div class="cv-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+          </div>
+          <div class="cv-card__text">
+            <h3>Curriculum Vitae</h3>
+            <p>View or download my latest CV in PDF format.</p>
+          </div>
+          <div class="cv-card__actions">
+            <a class="btn btn--primary" href="certs/CV MHEL.pdf" download>Download CV
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="certs/CV MHEL.pdf" target="_blank" rel="noopener">View online
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <!-- PROJECTS -->
       <section id="projects" class="section">
-        <h2>Projects</h2>>
+        <h2>Projects</h2>
         <article class="project">
           <img class="project__img" src="https://tr.rbxcdn.com/180DAY-aa7eebaf456316b0597338ea51f89fe0/500/280/Image/Jpeg/noFilter" alt="Cover image of the Cyberliminality Roblox game" />
           <div class="project__body">
@@ -120,8 +140,8 @@
           </div>
         </article>
       </section>
-      
-       <!-- EXPERIENCE -->
+
+      <!-- EXPERIENCE -->
       <section id="experience" class="section">
         <h2>Experience</h2>
 
@@ -131,65 +151,75 @@
           <div>
             <h3>NSTP Community Service Volunteer</h3>
             <p class="entry__org">City College of Calamba</p>
-    
-          <span class="experience-type">Community Involvement · Brgy. Lingga, Calamba City, Laguna</span>
-    
-          <p>
-            Participated in community service activities focused on
-            cleanliness, recycling, and environmental awareness.
-          </p>
-    
-          <div class="experience-highlights">
-            <strong>Activities & Accomplishments</strong>
-            <ul>
-              <li>Participated in community clean-up drives.</li>
-              <li>Created a trash bin using recyclable materials.</li>
-              <li>Made flowerpots from recycled materials to encourage environmental responsibility.</li>
-            </ul>
+
+            <span class="experience-type">Community Involvement · Brgy. Lingga, Calamba City, Laguna</span>
+
+            <p>
+              Participated in community service activities focused on
+              cleanliness, recycling, and environmental awareness.
+            </p>
+
+            <div class="experience-highlights">
+              <strong>Activities &amp; Accomplishments</strong>
+              <ul>
+                <li>Participated in community clean-up drives.</li>
+                <li>Created a trash bin using recyclable materials.</li>
+                <li>Made flowerpots from recycled materials to encourage environmental responsibility.</li>
+              </ul>
+            </div>
           </div>
         </article>
 
-         <article class="entry">
+        <article class="entry">
           <p class="entry__date">2025</p>
           <div>
             <h3>Backend Programmer</h3>
-            <p class="entry__org"> Bookstore — Web-Based bookstore</p>
-    
-          <span class="experience-type">Academic Project · Web Design and Programming / Database Management System</span>
-    
-          <p>
-            Worked as a backend programmer for Bookstore, a web-based
-            platform designed to help users find the book they are looking for.
-          </p>
-           <div class="experience-highlights">
-            <strong>Role & Contribution</strong>
-            <ul>
-              <li>Contributed to the backend development of the platform.</li>
-              <li>Worked on the technical side of the web application as part of the development team.</li>
+            <p class="entry__org">Bookstore — Web-Based bookstore</p>
+
+            <span class="experience-type">Academic Project · Web Design and Programming / Database Management System</span>
+
+            <p>
+              Worked as a backend programmer for Bookstore, a web-based
+              platform designed to help users find the book they are looking for.
+            </p>
+
+            <div class="experience-highlights">
+              <strong>Role &amp; Contribution</strong>
+              <ul>
+                <li>Contributed to the backend development of the platform.</li>
+                <li>Worked on the technical side of the web application as part of the development team.</li>
+              </ul>
+            </div>
           </div>
         </article>
+
         <article class="entry">
-          <!-- TODO: Replace with your real dates, e.g. "2026 – Present" -->
           <p class="entry__date">2025 – 2026</p>
           <div>
             <h3>Full Stack Developer</h3>
             <p class="entry__org">Cyberliminality &middot; Roblox game</p>
+
             <span class="experience-type">Academic Project · Software Engineering</span>
+
             <p>
-            Contributed as a full-stack developer to the development
-            of the Roblox game Cyberliminality.
-          </p>
+              Contributed as a full-stack developer to the development
+              of the Roblox game Cyberliminality.
+            </p>
+
             <div class="experience-highlights">
-            <strong>Role & Contribution</strong>
-            <ul>
-              <li>Built a story-driven 3D horror-adventure that teaches cybersecurity awareness to students, with Episode 1 released.</li>
-              <li>Developed the gameplay and the systems behind it: a phishing inbox sorter, parcel inspection with a sandbox, a chase sequence, and an Analyst Rating (S to C).</li>
-              <li>Implemented automatic progress saving and a collectible knowledge entries system.</li>
-              <li>Wrote feedback so every wrong answer explains itself, turning each mistake into a lesson.</li>
-              <!-- TODO: Add specifics about your work: scripting (client and server), UI, data saving, tools used, number of players, etc. -->
-            </ul>
+              <strong>Role &amp; Contribution</strong>
+              <ul>
+                <li>Built a story-driven 3D horror-adventure that teaches cybersecurity awareness to students, with Episode 1 released.</li>
+                <li>Developed the gameplay and the systems behind it: a phishing inbox sorter, parcel inspection with a sandbox, a chase sequence, and an Analyst Rating (S to C).</li>
+                <li>Implemented automatic progress saving and a collectible knowledge entries system.</li>
+                <li>Wrote feedback so every wrong answer explains itself, turning each mistake into a lesson.</li>
+                <!-- TODO: Add specifics about your work: scripting (client and server), UI, data saving, tools used, number of players, etc. -->
+              </ul>
+            </div>
           </div>
         </article>
+      </section>
+
       <!-- EDUCATION -->
       <section id="education" class="section">
         <h2>Education</h2>
@@ -214,30 +244,28 @@
             <p class="entry__org">Lecheria National High School</p>
           </div>
         </article>
-         <article class="entry">
+        <article class="entry">
           <p class="entry__date">2010 – 2016</p>
           <div>
             <h3>Elementary School</h3>
             <p class="entry__org">Lecheria Elementary School</p>
           </div>
         </article>
-        
       </section>
 
       <!-- CERTIFICATIONS -->
       <section id="certifications" class="section">
         <h2>Certifications</h2>
-        <p></p>
         <ul class="cert-list">
           <li>
             <span class="cert__name"><a href="certs/Solo Learn Course Certificate.pdf" target="_blank" rel="noopener">Introduction to Java</a></span>
             <span class="cert__meta">Solo Learn &middot; 2025</span>
           </li>
           <li>
-           <span class="cert__name"><a href="certs/Getting_Started_with_Cisco_Packet_Tracer_certificate_mbvillaflor-ccc-edu-ph_90cdc909-de14-4f0b-a597-aa2b96d887c4 (1).pdf" target="_blank" rel="noopener">Getting Started with Cisco Packet Tracer</a></span>
-           <span class="cert__meta">Cisco Networking Academy &middot; 2025</span>
-         </li>
-           <li>
+            <span class="cert__name"><a href="certs/Getting_Started_with_Cisco_Packet_Tracer_certificate_mbvillaflor-ccc-edu-ph_90cdc909-de14-4f0b-a597-aa2b96d887c4 (1).pdf" target="_blank" rel="noopener">Getting Started with Cisco Packet Tracer</a></span>
+            <span class="cert__meta">Cisco Networking Academy &middot; 2025</span>
+          </li>
+          <li>
             <span class="cert__name"><a href="certs/Exploring_Networking_with_Cisco_Packet_Tracer_certificate_mbvillaflor-ccc-edu-ph_74681459-00e7-4dcb-8e64-5bb70f96a09e (1).pdf" target="_blank" rel="noopener">Exploring Networking with Cisco Packet Tracer</a></span>
             <span class="cert__meta">Cisco Networking Academy &middot; 2025</span>
           </li>
@@ -254,8 +282,7 @@
             <span class="cert__meta">Wadhwani Foundation &middot; 2024</span>
           </li>
           <li>
-            <span class="cert__name"><a href="certs/Wadhwani Foundation Certificate - Effective Speaking and.pdf" target="_blank" rel="noopener">Effective Speaking and
-Listening Skills (US English)</a></span>
+            <span class="cert__name"><a href="certs/Wadhwani Foundation Certificate - Effective Speaking and.pdf" target="_blank" rel="noopener">Effective Speaking and Listening Skills (US English)</a></span>
             <span class="cert__meta">Wadhwani Foundation &middot; 2024</span>
           </li>
           <li>
@@ -275,14 +302,14 @@ Listening Skills (US English)</a></span>
             <div class="contact__info">
               <h2 class="contact__title">Let’s talk</h2>
               <p class="contact__intro">
-                Have a question, opportunity, or idea to discuss? Send a message using the form or reach me through the contact details below.       </p>
+                Have a question, opportunity, or idea to discuss? Send a message using the form or reach me through the contact details below.
+              </p>
 
               <ul class="info-list">
                 <li>
                   <span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
                   <div>
                     <span class="info-label">Email</span>
-                    
                     <a href="mailto:villaflormhel16@gmail.com">villaflormhel16@gmail.com</a>
                   </div>
                 </li>
@@ -302,13 +329,12 @@ Listening Skills (US English)</a></span>
                 </li>
               </ul>
 
-  
               <div class="socials">
                 <a href="https://github.com/enxiejohn" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
                 <a href="https://www.linkedin.com/in/mhel-bernard-villaflor-0b9199419/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 9h3.2v10.5H4.5zM6.1 4a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8zM10 9h3v1.5c.5-.9 1.7-1.8 3.4-1.8 3.4 0 4.1 2.2 4.1 5.1v5.7h-3.2v-5c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6v5.1H10z"/></svg></a>
                 <a href="https://www.facebook.com/mhel.bernardv" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.5V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.1H7.5v3h2.7V21z"/></svg></a>
                 <a href="https://www.instagram.com/mhl_vllflr/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-                <a href="https://x.com/enxie95428?fbclid=IwY2xjawVw83pleHRuA2FlbQIxMQBwZG9mA3NydGMGYXBwX2lkATAAAR-JYK8Sg6or0fBcvmGn0n8kAxvUjOoxSQinD8f1hipxeU93d1FX09zblhH6jA_aem_dn21_Oify_xNWLCOVJZ8Ig" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+                <a href="https://x.com/enxie95428" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
                 <a href="https://www.roblox.com/games/109086064422405/Cyberliminality" target="_blank" rel="noopener" aria-label="Play Cyberliminality on Roblox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="19" height="11" rx="5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="15.5" cy="11.5" r=".8" fill="currentColor"/><circle cx="17.8" cy="13.5" r=".8" fill="currentColor"/></svg></a>
               </div>
 
@@ -351,8 +377,9 @@ Listening Skills (US English)</a></span>
           </div>
         </div>
       </section>
+
       <footer class="footer">
-        <p>&copy; <span id="year"></span>2026 • Mhel Bernard Villaflor • My Design Portfolio • All rights reserved.</p>
+        <p>&copy; <span id="year"></span> • Mhel Bernard Villaflor • My Design Portfolio • All rights reserved.</p>
       </footer>
 
     </main>
